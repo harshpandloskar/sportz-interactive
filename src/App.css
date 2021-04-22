@@ -1,0 +1,81 @@
+.main-body {
+    padding: 30px 0;    
+}
+.playerListing {
+    animation: slideUp 0.5s ease;
+    position: relative;
+    top: 0;
+}
+div .player-card {
+    padding: 20px 20px 15px;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #BF953F, #B38728, #AA771C, #FCF6BA ,#FBF5B7);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;    
+}
+@keyframes slideUp {
+    0% {
+		top: 100px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.boldText {
+    font-weight: 600;
+}
+
+.playerImg img {
+    width: 50%;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: block;
+    min-height: 130px;
+    border: 2px solid;
+}
+
+.player-card div{
+    margin: 0 0 10px;
+}
+
+.inputSearchParent {
+    text-align: right;
+    margin: 0 0 20px;
+}
+.inputSearchParent input{
+    padding: 5px 10px!important;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.emptyList {
+    padding: 16px;
+}
+
+@media only screen  and (max-width: 960px) and (min-width: 768px) {
+    div .player-card {
+        padding: 20px 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div .player-card {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
